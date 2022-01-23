@@ -1,0 +1,23 @@
+[tool.poetry]
+authors = ["James Hopper <jimgolfgti@gmail.com>"]
+description = "Student Challenge in Python"
+name = "student_challenge"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+mypy = "^0.931"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --doctest-continue-on-failure --cov student_challenge --cov-report xml"
+minversion = "6.0"
